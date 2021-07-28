@@ -40,6 +40,10 @@ function handFilter:OnInitialize()
         [182328] = true, -- Dominion Etching: Grief
         [182329] = true, -- Dominion's Calling
         [186727] = true, -- Seal Breaker's Key
+        [186600] = true,
+        [186601] = true,
+        [186602] = true,
+        [186604] = true,
         [186713] = true -- Nilganihmaht Control Ring
     }
 end
