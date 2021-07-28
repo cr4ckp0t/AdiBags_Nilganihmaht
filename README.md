@@ -2,6 +2,8 @@
 
 AdiBags filter for rings and items needed to obtain the Hand of Nilganihmaht mount.
 
+[https://www.curseforge.com/wow/addons/adibags-nilganihmaht](https://www.curseforge.com/wow/addons/adibags-nilganihmaht)
+
 ## Items Tracked
 
 * [Nilganihmaht's Stone Ring](https://wowhead.com/item=186603)
