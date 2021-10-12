@@ -34,7 +34,7 @@ function handFilter:OnInitialize()
         [186605] = true, -- Nilganihmaht's Runed Band
         [186608] = true, -- Nilganihmaht's Gold Band
         [186607] = true, -- Nilganihmaht's Silver Ring
-        [188606] = true, -- Nilganihmaht's Signet Ring
+        [186606] = true, -- Nilganihmaht's Signet Ring
         [182326] = true, -- Dominion Etching: Pain
         [182327] = true, -- Dominion Etching: Loss
         [182328] = true, -- Dominion Etching: Grief
