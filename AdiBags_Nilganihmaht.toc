@@ -1,6 +1,6 @@
-## Interface: 90207
+## Interface: 100000
 ## Title: AdiBags - Nilganihmaht
-## Version: 1.0.6
+## Version: 1.0.7
 ## Author: Crackpot
 ## Notes: AdiBags filter for rings and items needed to obtain the Hand of Nilganihmaht mount.
 ## X-Category: Bags & Inventory
@@ -8,3 +8,4 @@
 
 Localization.lua
 AdiBags_Nilganihmaht.lua
+
