@@ -65,7 +65,8 @@ function handFilter:Filter(slotData)
         return L["Nilganihmaht"]
     end
 
-    tooltip = tooltip or tooltipInit()
+    --tooltip = tooltip or tooltipInit()
+    tooltip = GameTooltip
     tooltip:SetOwner(UIParent, "ANCHOR_NONE")
     tooltip:ClearLines()
 
