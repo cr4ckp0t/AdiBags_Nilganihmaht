@@ -1,26 +1,12 @@
 -------------------------------------------------------------------------------
--- AdiBags - Nilganihmaht By Crackpot (US, Arthas)
+-- AdiBags - Nilganihmaht By Crackpot (US, Illidan)
 -------------------------------------------------------------------------------
 local addonName, addon = ...
 local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 
 local L = addon.L
-local tooltip
 
 local tonumber = _G["tonumber"]
-
-local function tooltipInit()
-    local tip, leftside = CreateFrame("GameTooltip"), {}
-    for i = 1, 6 do
-        local left, right = tip:CreateFontString(), tip:CreateFontString()
-        left:SetFontObject(GameFontNormal)
-        right:SetFontObject(GameFontNormal)
-        tip:AddFontStrings(left, right)
-        leftside[i] = left
-    end
-    tip.leftside = leftside
-    return tip
-end
 
 local handFilter = AdiBags:RegisterFilter("Nilganihmaht", 98, "ABEvent-1.0")
 handFilter.uiName = L["Nilganihmaht"]
@@ -64,17 +50,4 @@ function handFilter:Filter(slotData)
     if self.items[tonumber(slotData.itemId)] then
         return L["Nilganihmaht"]
     end
-
-    --tooltip = tooltip or tooltipInit()
-    tooltip = GameTooltip
-    tooltip:SetOwner(UIParent, "ANCHOR_NONE")
-    tooltip:ClearLines()
-
-    if slotData.bag == BANK_CONTAINER then
-        tooltip:SetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
-    else
-        tooltip:SetBagItem(slotData.bag, slotData.slot)
-    end
-
-    tooltip:Hide()
 end
